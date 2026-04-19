@@ -1,8 +1,14 @@
 # AI Flower Voice Assistant
 
-An AI-powered voice assistant shaped like a potted flower, running on a Raspberry Pi Zero 2 W with ElevenLabs TTS/STT and a pluggable LLM backend via [PicoClaw](https://github.com/sipeed/picoclaw).
+<p align="center">
+  <img src="docs/images/front.png" alt="The Talking Flower toy used as the hardware base" width="520">
+</p>
 
-Press the button on the flower, speak, and it answers in character — as a sarcastic, jealous, attention-hungry talking plant with petals and attitude. Italian by default; the character personality is defined in plain Markdown files under [`character/`](character/) and is easy to swap.
+An AI-powered voice assistant built by gutting a **Nintendo Talking Flower toy** (the merchandise from *Super Mario Bros. Wonder*) and replacing its electronics with a Raspberry Pi Zero 2 W, a MAX98357A I2S amplifier, a USB microphone, and an ElevenLabs + [PicoClaw](https://github.com/sipeed/picoclaw) voice pipeline.
+
+Press the button on the flower, speak, and it answers in character — a sarcastic, attention-hungry talking plant with petals and attitude. Italian by default; the character personality is defined in plain Markdown files under [`character/`](character/) and is easy to swap for any other persona.
+
+> This project only reuses the toy as a physical enclosure (button + speaker + case). No game audio, artwork, trademarks, or copyrighted character assets are included or redistributed in this repository. The personality, code, and documentation here are original work; the Nintendo-branded toy itself is something you supply yourself. See the [License / Third-party assets](#license) note at the bottom.
 
 ## Features
 
@@ -37,7 +43,9 @@ End-to-end latency with OpenAI gpt-4o-mini: typically **~2-4 seconds**.
 
 ## Hardware
 
-Any flower-shaped enclosure with a button and a speaker can be used. The original build repurposes a commercial plant-shaped toy, tapping into its existing dome-switch button and speaker while bypassing the factory electronics.
+The build repurposes the enclosure, dome-switch button, and speaker of a **Nintendo Talking Flower** toy (Super Mario Bros. Wonder merchandise, PCB revision `TAF-SUB-01`). The Pi, amplifier, and microphone go inside; the original main board (`TAF-MAIN-01`) is bypassed entirely. The ribbon cable between the two boards is cut and the five pads that matter (button x2, speaker x2, battery) are wired out to the Pi + MAX98357A.
+
+Any other flower-shaped enclosure with a button and a speaker works too — this is just the one I happened to disembowel.
 
 | Component | Notes |
 |-----------|-------|
