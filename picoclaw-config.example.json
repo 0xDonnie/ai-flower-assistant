@@ -1,0 +1,49 @@
+{
+  "_comment": "Put your real API key in .security.yml (see picoclaw-security.example.yml). This file only configures the model binding; the key binding name is <model_name>:<index_in_model_list>, so 'kimi-turbo:0' here.",
+  "version": 2,
+  "agents": {
+    "defaults": {
+      "workspace": "~/.picoclaw/workspace",
+      "restrict_to_workspace": true,
+      "model_name": "kimi-turbo",
+      "max_tokens": 512,
+      "temperature": 0.8,
+      "max_tool_iterations": 0,
+      "summarize_message_threshold": 20,
+      "summarize_token_percent": 75
+    }
+  },
+  "model_list": [
+    {
+      "model_name": "kimi-turbo",
+      "model": "openai/gpt-4o-mini",
+      "api_base": "https://api.openai.com/v1",
+      "enabled": true
+    }
+  ],
+  "tools": {
+    "web": {"enabled": false},
+    "exec": {"enabled": false},
+    "cron": {"enabled": false},
+    "read_file": {"enabled": false},
+    "write_file": {"enabled": false},
+    "edit_file": {"enabled": false},
+    "append_file": {"enabled": false},
+    "list_dir": {"enabled": false},
+    "send_file": {"enabled": false},
+    "send_tts": {"enabled": false},
+    "spawn": {"enabled": false},
+    "subagent": {"enabled": false},
+    "web_fetch": {"enabled": false},
+    "find_skills": {"enabled": false},
+    "install_skill": {"enabled": false},
+    "message": {"enabled": false},
+    "i2c": {"enabled": false},
+    "spi": {"enabled": false},
+    "mcp": {"enabled": false},
+    "skills": {"enabled": false}
+  },
+  "gateway": {
+    "port": 8080
+  }
+}

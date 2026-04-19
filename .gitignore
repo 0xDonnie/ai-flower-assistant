@@ -1,0 +1,18 @@
+.env
+*.mp3
+__pycache__/
+*.pyc
+.venv/
+response_*.mp3
+speak_tmp.mp3
+last_input.wav
+imgs/
+.DS_Store
+
+# User's SD-card config with password hash (never commit)
+/user-data
+/network-config
+
+# User's personal PicoClaw config with real API keys
+/picoclaw-config.json
+/picoclaw-security.yml

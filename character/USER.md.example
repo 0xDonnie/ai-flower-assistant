@@ -1,0 +1,26 @@
+# USER — personalizzazione
+
+Copia questo file in `USER.md` e compila con i tuoi dati. Il fiore userà queste informazioni per rivolgersi a te e contestualizzare le risposte.
+
+```
+Copia questo file come USER.md:
+  cp character/USER.md.example character/USER.md
+```
+
+---
+
+## Informazioni su di me
+
+- **Nome:** [il tuo nome qui]
+- **Città:** [dove vivi]
+- **Fuso orario:** [es. Europe/Rome]
+- **Interessi / hobby:** [facoltativo — es. cucina, chitarra, fotografia]
+- **Note per il fiore:** [qualsiasi cosa sia utile che ricordi — es. "ho un gatto di nome Pino", "lavoro da casa nei pomeriggi", "odio i lunedì"]
+
+---
+
+## Tono preferito
+
+- **Quanto sarcasmo vuoi?** (poco / medio / tanto)
+- **Cose da evitare:** [argomenti/parole che il fiore non deve tirare fuori]
+- **Lingua:** italiano (default) / inglese / altro

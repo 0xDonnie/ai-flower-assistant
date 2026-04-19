@@ -1,0 +1,12 @@
+# PicoClaw v0.2.6+ stores API keys in this separate file (not in config.json).
+# The key binding name is <model_name>:<index_in_model_list>, so "kimi-turbo:0".
+#
+# Paste your OpenAI API key below (needs credit on platform.openai.com — very
+# cheap with gpt-4o-mini, ~$0.0006 per query, ~$1-4/month for personal use).
+# Alternatively any OpenAI-compatible endpoint: Groq, DeepSeek, OpenRouter, etc.
+
+channels: {}
+model_list:
+  kimi-turbo:0:
+    api_keys:
+      - REPLACE_WITH_YOUR_API_KEY

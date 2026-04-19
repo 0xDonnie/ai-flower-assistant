@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- generic stylized flower, not derivative of any branded character -->
+  <rect width="256" height="256" fill="#EAF5D2"/>
+  <!-- stem -->
+  <rect x="120" y="140" width="16" height="90" rx="8" fill="#2F6B1F"/>
+  <!-- leaf left -->
+  <ellipse cx="92" cy="180" rx="28" ry="14" fill="#4C9A2A" transform="rotate(-30 92 180)"/>
+  <!-- leaf right -->
+  <ellipse cx="164" cy="200" rx="28" ry="14" fill="#4C9A2A" transform="rotate(30 164 200)"/>
+  <!-- petals -->
+  <circle cx="128" cy="64" r="30" fill="#FFC857"/>
+  <circle cx="80" cy="100" r="30" fill="#FFC857"/>
+  <circle cx="176" cy="100" r="30" fill="#FFC857"/>
+  <circle cx="96" cy="148" r="30" fill="#FFC857"/>
+  <circle cx="160" cy="148" r="30" fill="#FFC857"/>
+  <!-- center -->
+  <circle cx="128" cy="108" r="34" fill="#E07A3A"/>
+  <circle cx="128" cy="108" r="20" fill="#8B3A11"/>
+</svg>

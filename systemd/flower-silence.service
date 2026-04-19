@@ -1,0 +1,12 @@
+[Unit]
+Description=Flower I2S silence streamer (prevents amp power-down pop)
+After=sound.target
+
+[Service]
+User=pi
+ExecStart=/usr/bin/aplay -D speaker -f S16_LE -r 48000 -c 1 /dev/zero
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
